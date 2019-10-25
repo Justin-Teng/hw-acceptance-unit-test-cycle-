@@ -14,9 +14,9 @@ Background: movies in database
 
 Scenario: create new movies
   When I am on the RottenPotatoes home page
-  And I follow "More about Alien"
+  And I follow "More about Star Wars"
   And I follow "Edit"
-  And I fill in "Director" with "Ridley Scott"
+  And I fill in "Director" with "George Lucas"
   And I press "Update Movie Info"
-  Then I should be on the details page for "Alien"
-  And I should see "Alien was successfully updated."
+  Then I should be on the details page for "Star Wars"
+  And I should see "Star Wars was successfully updated."

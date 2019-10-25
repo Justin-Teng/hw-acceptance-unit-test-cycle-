@@ -14,7 +14,7 @@ Background: movies in database
 
 Scenario: create new movies
   When I am on the RottenPotatoes home page
-  And I follow "More about Alien"
+  And I follow "More about Blade Runner"
   And I press "Delete"
   Then I should be on the new home page
-  And I should see "Movie 'Alien' deleted."
+  And I should see "Movie 'Blade Runner' deleted."

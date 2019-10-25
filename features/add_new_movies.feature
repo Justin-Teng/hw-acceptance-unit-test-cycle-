@@ -15,12 +15,12 @@ Background: movies in database
 Scenario: create new movies
   When I am on the RottenPotatoes home page
   And I follow "Add new movie"
-  And I fill in "Title" with "Blade Runner 2049"
-  And I select "R" from "Rating"
-  And I select "2017" from "movie_release_date_1i"
-  And I select "October" from "movie_release_date_2i"
-  And I select "3" from "movie_release_date_3i"
-  And I fill in "Director" with "Denis Villeneuve"
+  And I fill in "Title" with "Star Wars 2"
+  And I select "PG" from "Rating"
+  And I select "2015" from "movie_release_date_1i"
+  And I select "February" from "movie_release_date_2i"
+  And I select "1" from "movie_release_date_3i"
+  And I fill in "Director" with "Darth Vador"
   And I press "Save Changes"
   Then I should be on the new home page
-  And I should see "Blade Runner 2049 was successfully created."
+  And I should see "Star Wars 2 was successfully created."
